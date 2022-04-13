@@ -1,15 +1,15 @@
 import unittest
 
-from translator import englishToFrench, frenchToEnglish
+from translator import english_to_french, french_to_english
 
-class Test_englishToFrench(unittest.TestCase): 
+class Test_english_to_french(unittest.TestCase): 
     def test1(self): 
-        self.assertEqual(englishToFrench('Null'), 'Null') # test that when Null is sent, that Null is received
-        self.assertEqual(englishToFrench('Hello'), 'Bonjour')  # test when Hello is given in English that the output is Bonjour in French
+        self.assertEqual(english_to_french('Null'), 'Null') # test that when Null is sent, that Null is received
+        self.assertEqual(english_to_french('Hello'), 'Bonjour')  # test when Hello is given in English that the output is Bonjour in French
 
-class Test_frenchToEnglish(unittest.TestCase): 
+class Test_french_to_english(unittest.TestCase): 
     def test2(self): 
-        self.assertEqual(frenchToEnglish('Null'), 'Null') # test that when Null is sent, that Null is received
-        self.assertEqual(frenchToEnglish('Bonjour'), 'Hello') # test when Bonjour is given in French that the output is Hello in English
+        self.assertEqual(french_to_english('Null'), 'Null') # test that when Null is sent, that Null is received
+        self.assertEqual(french_to_english('Bonjour'), 'Hello') # test when Bonjour is given in French that the output is Hello in English
 
 unittest.main()
